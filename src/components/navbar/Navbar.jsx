@@ -3,11 +3,6 @@ import Logo from "../../assets/Logo2.png";
 
 const menu = [
   {
-    id: 1,
-    name: "Home",
-    link: "/#",
-  },
-  {
     id: 2,
     name: "About Us",
     link: "/about",
@@ -40,12 +35,14 @@ const Navbar = () => {
       <div className="container mx-auto px-4 lg:px-6 xl:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Left side of navbar */}
-          <div className="flex justify-between items-center gap-2 text-2xl font-bold text-gray-800">
-            <a href="/">
-              <img className="w-5 animate-bounce" src={Logo} alt="Logo" />
-            </a>
+
+          <a
+            href="/"
+            className="flex justify-between items-center gap-2 text-2xl font-bold text-gray-800"
+          >
+            <img className="w-5 animate-bounce" src={Logo} alt="Logo" />
             <span>Kwetu computers</span>
-          </div>
+          </a>
 
           {/* Right side of navbar */}
           <ul className="hidden md:flex space-x-4 text-gray-800">
@@ -100,4 +97,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
