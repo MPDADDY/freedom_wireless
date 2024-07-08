@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../../assets/logo.png"
 
 const Navbar = () => {
   return (
@@ -6,40 +7,38 @@ const Navbar = () => {
       <div className="container mx-auto px-4 lg:px-6 xl:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Left side of navbar */}
-          <div className="text-xl font-bold text-gray-800">
-            <span>FREEDOM WIRELESS SOLUTIONS</span>
+          <div className="flex justify-between items-center gap-2 text-2xl font-bold text-gray-800">
+            <a href="#">
+              <img className="w-5  animate-pulse" src={logo} alt="Logo" />
+            </a>
+            <span>Freedom Wireless Solutions</span>
           </div>
 
           {/* Right side of navbar */}
           <ul className="hidden md:flex space-x-4 text-gray-800">
             <li>
-              <a href="#" className="hover:text-blue-500">
-                Internet Plans
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-blue-500">
-                Customer Support
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-blue-500">
+              <a href="#" className="hover:text-blue-500 font-semibold">
                 About Us
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-blue-500">
-                Support
+              <a href="#" className="hover:text-blue-500 font-semibold">
+                Internet Plans
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-blue-500">
-                Contact Us
+              <a href="#" className="hover:text-blue-500 font-semibold">
+                Customer Support
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-blue-500">
+              <a href="#" className="hover:text-blue-500 font-semibold">
                 Terms of Service
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-blue-500 font-semibold">
+                Contact Us
               </a>
             </li>
           </ul>
@@ -68,31 +67,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 px-4 text-gray-800 hover:bg-blue-100"
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-4 text-gray-800 hover:bg-blue-100"
-              >
-                Internet Plans
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-4 text-gray-800 hover:bg-blue-100"
-              >
-                Customer Support
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-4 text-gray-800 hover:bg-blue-100"
+                className="block py-2 px-4 text-gray-800 hover:bg-blue-100 font-semibold"
               >
                 About Us
               </a>
@@ -100,25 +75,33 @@ const Navbar = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 px-4 text-gray-800 hover:bg-blue-100"
+                className="block py-2 px-4 text-gray-800 hover:bg-blue-100 font-semibold"
               >
-                Support
+                Internet Plans
               </a>
             </li>
             <li>
               <a
                 href="#"
-                className="block py-2 px-4 text-gray-800 hover:bg-blue-100"
+                className="block py-2 px-4 text-gray-800 hover:bg-blue-100 font-semibold"
               >
-                Contact Us
+                Customer Support
               </a>
             </li>
             <li>
               <a
                 href="#"
-                className="block py-2 px-4 text-gray-800 hover:bg-blue-100"
+                className="block py-2 px-4 text-gray-800 hover:bg-blue-100 font-semibold"
               >
                 Terms of Service
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="block py-2 px-4 text-gray-800 hover:bg-blue-100 font-semibold"
+              >
+                Contact Us
               </a>
             </li>
           </ul>
