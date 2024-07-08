@@ -31,7 +31,7 @@ const menu = [
 
 const Navbar = () => {
   return (
-    <div className="bg-blue-200 shadow-md duration-200 relative z-50">
+    <div className="bg-blue-200 shadow-md duration-200 sticky top-0 z-50 ">
       <div className="container mx-auto px-4 lg:px-6 xl:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Left side of navbar */}
