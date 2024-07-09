@@ -1,7 +1,13 @@
 import React from "react";
 import Logo from "../../assets/Logo2.png";
+import { Link } from "react-router-dom";
 
 const menu = [
+  {
+    id: 1,
+    name: "Home",
+    link: "/#",
+  },
   {
     id: 2,
     name: "About Us",
@@ -9,21 +15,16 @@ const menu = [
   },
   {
     id: 3,
-    name: "Internet Plans",
-    link: "/internet-plans",
+    name: "Services",
+    link: "/services",
   },
   {
     id: 4,
-    name: "Customer Support",
-    link: "/customer-support",
+    name: "Products",
+    link: "/products",
   },
   {
     id: 5,
-    name: "Terms of Service",
-    link: "/terms-of-service",
-  },
-  {
-    id: 6,
     name: "Contact Us",
     link: "/contact",
   },
@@ -36,24 +37,24 @@ const Navbar = () => {
         <div className="flex justify-between items-center py-4">
           {/* Left side of navbar */}
 
-          <a
-            href="/"
+          <Link
+            to="/"
             className="flex justify-between items-center gap-2 text-2xl font-bold text-gray-800"
           >
             <img className="w-5 animate-bounce" src={Logo} alt="Logo" />
             <span>Kwetu computers</span>
-          </a>
+          </Link>
 
           {/* Right side of navbar */}
           <ul className="hidden md:flex space-x-4 text-gray-800">
             {menu.map((item) => (
               <li key={item.id}>
-                <a
-                  href={item.link}
+                <Link
+                  to={item.link}
                   className="hover:text-blue-500 font-semibold"
                 >
                   {item.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

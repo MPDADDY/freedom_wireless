@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from "../../assets/Logo2.png";
+import { Link } from 'react-router-dom';
 
 const Welcome = () => {
     return (
@@ -33,12 +34,12 @@ const Welcome = () => {
                 tellus, sit amet auctor ligula sodales eu. Nam vehicula lectus
                 ac leo imperdiet, et cursus arcu fermentum.
               </p>
-              <a
-                href="#"
+              <Link
+                to="about"
                 className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded inline-block"
               >
                 Learn More
-              </a>
+              </Link>
             </div>
           </div>
         </div>
